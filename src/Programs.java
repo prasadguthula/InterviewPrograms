@@ -24,6 +24,15 @@ public class Programs {
 		}
 		System.out.println("Factorial of: "+a+" is "+fact);
 	}
+	
+	public static void palindrome(int a) {
+		
+		int palindrome;
+		while(a!=0) {
+			
+		}
+		
+	}
 
 
 }
