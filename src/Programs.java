@@ -6,6 +6,7 @@ public class Programs {
 		
 		swappingNumbers(10,20);
 		factorial(5);
+		palindrome(12321);
 
 	}
 	
@@ -27,9 +28,18 @@ public class Programs {
 	
 	public static void palindrome(int a) {
 		
-		int palindrome;
+		int palindrome, rev,temp;
+		rev=0;
+		palindrome=a;
 		while(a!=0) {
-			
+			temp=a%10;
+			rev=rev*10+temp;
+			a=a/10;
+		}
+		if(palindrome==rev) {
+			System.out.println("Given Number: "+palindrome+" is a palindrome Number");
+		}else {
+			System.out.println("Given Number: "+palindrome+" is not a palindrome Number");
 		}
 		
 	}
