@@ -7,6 +7,7 @@ public class Programs {
 		swappingNumbers(10,20);
 		factorial(5);
 		palindrome(12321);
+		stringReverse("PRASAD");
 
 	}
 	
@@ -43,16 +44,16 @@ public class Programs {
 		}
 		
 	}
-	public void stringReverse(String str) {
+	public static void stringReverse(String str) {
 		String revString="";
 		
 		char[] temp=str.toCharArray();
-		int len=temp.length;
-		for(int i=0;i<len;i++) {
+		int len=temp.length-1;
+		for(int i=len;i>=0;i--) {
 			revString=revString+temp[i];
 			
 		}
-		System.out.println("Reverse String for: "+str+"is: "+revString);
+		System.out.println("Reverse String for: "+str+" is: "+revString);
 	}
 
 
