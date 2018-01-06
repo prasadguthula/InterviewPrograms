@@ -44,7 +44,15 @@ public class Programs {
 		
 	}
 	public void stringReverse(String str) {
+		String temp,revString="";
 		
+		char[] temp=str.toCharArray();
+		len=temp.length;
+		for(int i=0;i<len;i++) {
+			revString=revString+temp[i];
+			
+		}
+		System.out.println("Reverse String for: "+str+"is: "+revString);
 	}
 
 
