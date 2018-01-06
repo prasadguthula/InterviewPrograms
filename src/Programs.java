@@ -44,10 +44,10 @@ public class Programs {
 		
 	}
 	public void stringReverse(String str) {
-		String temp,revString="";
+		String revString="";
 		
 		char[] temp=str.toCharArray();
-		len=temp.length;
+		int len=temp.length;
 		for(int i=0;i<len;i++) {
 			revString=revString+temp[i];
 			
