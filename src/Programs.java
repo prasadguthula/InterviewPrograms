@@ -8,6 +8,7 @@ public class Programs {
 		factorial(5);
 		palindrome(12321);
 		stringReverse("PRASAD");
+		fibonacciSeries(20);
 
 	}
 	
@@ -54,6 +55,23 @@ public class Programs {
 			
 		}
 		System.out.println("Reverse String for: "+str+" is: "+revString);
+	}
+	
+	public static void fibonacciSeries(int len) {
+		
+		int fib, fibFirst=1,fibSecond=1;
+		System.out.println("Fibonacci Series");
+		System.out.print(fibFirst+"  "+fibSecond+"  ");
+		
+		for(int i=3;i<=len;i++) {
+			fib=fibFirst+fibSecond;
+			fibFirst=fibSecond;
+			fibSecond=fib;
+			System.out.print(fib+"  ");
+		}
+		
+		
+		
 	}
 
 
