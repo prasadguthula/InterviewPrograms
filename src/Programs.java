@@ -69,9 +69,6 @@ public class Programs {
 			fibSecond=fib;
 			System.out.print(fib+"  ");
 		}
-		
-		
-		
 	}
 
 
